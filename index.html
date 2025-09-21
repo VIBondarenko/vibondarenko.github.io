@@ -8,7 +8,6 @@
   <meta content="Vitaliy Bondarenko | Software Developer (Java and Delphi)" name="description">
   <meta content="" name="keywords">
   <!-- Mobile Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <!-- Google Fonts -->
@@ -41,7 +40,7 @@
 </head>
 <body>
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none" title="Open navigation menu" aria-label="Open navigation menu"><i class="bi bi-list mobile-nav-toggle"></i></button>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
@@ -51,7 +50,6 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skills</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>        
         <li><a href="index_de.html" class="nav-link scrollto"><i class="fa fa-globe"></i> <span>Deutsch</span></a></li>        
       </ul>
     </nav>
@@ -62,10 +60,12 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Vitaliy Bondarenko</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Developer (Java and Delphi), Freelancer"></span></p>
+
+      <p><span class="typed" data-typed-items="It is my Resume site, I'm Software Developer (Java and Delphi)"></span></p>
+
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/vibondarenko/" class="linkedin" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/VIBondarenko" class="github" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vibondarenko/" class="linkedin" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/VIBondarenko" class="github" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -171,7 +171,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p> <a href="https://drive.google.com/file/d/1NHQuPt2uFIe8u_N5Z2jYwLzKLwRowMKO/view?usp=drive_link" target="_blank">Download My Resume (English)</a> </p>
+          <p> <a href="https://drive.google.com/file/d/1NHQuPt2uFIe8u_N5Z2jYwLzKLwRowMKO/view?usp=drive_link" target="_blank" rel="noopener">Download My Resume (English)</a> </p>
         </div>
 
         <div class="row">
@@ -210,13 +210,13 @@
             <div class="resume-item">
               <h4>09.2002 - 01.2004</h4>
               <h4>Master of Technical Informatik (ENIC NARIC recognized)</h4>
-              <p><b><em><a href="https://donntu.edu.ua/" target="_blank">Donetsk National Technical University</a>, Donetsk (now in Lutsk), Ukraine</em></b></p>
+              <p><b><em><a href="https://donntu.edu.ua/" target="_blank" rel="noopener">Donetsk National Technical University</a>, Donetsk (now in Lutsk), Ukraine</em></b></p>
               <p><u>Diploma Thesis:</u> The expert system using fuzzy logic for lungs diagnostic</p>
             </div>
             <div class="resume-item">
               <h4>09.1998 - 07.2002</h4>
               <h4>Bachelor of Computer Science (ENIC NARIC recognized)</h4>
-              <p><b><em><a href="https://donntu.edu.ua/" target="_blank">Donetsk National Technical University</a>, Donetsk (now in Lutsk), Ukraine</em></b></p>
+              <p><b><em><a href="https://donntu.edu.ua/" target="_blank" rel="noopener">Donetsk National Technical University</a>, Donetsk (now in Lutsk), Ukraine</em></b></p>
               <p><u>Studied:</u> Discrete Math, Probability Theory, Database Management Systems, 
                 Object Oriented Programming, Automatic Control Theory, Human Anatomy,
                 Pathology Fundamentals,  Human Diagnostic Fundamentals, Computer Diagnostic Systems Design and etc.</p>
@@ -238,11 +238,11 @@
             <div class="resume-item">
               <h4>12.2015 - 03.2016</h4>
               <h4>Junior Java Developer (Java Core)</h4>
-              <p><b><em>Brain Academy (<a href="https://mainacademy.ua/" target="_blank">Main Academy</a>) (Kyiv (Kiev), Ukraine)</em></b></p>
+              <p><b><em>Brain Academy (<a href="https://mainacademy.ua/" target="_blank" rel="noopener">Main Academy</a>) (Kyiv (Kiev), Ukraine)</em></b></p>
               <p>
                 <ul>
                   <li>120 hours of theory and practice Java (Java Fundamentals, OOP, Exceptions, Generics, Collections, Multi-threading, OOD, Patterns, Reflections, IO Streams, Annotations and etc.)</li>
-                  <li>Course project (<a href="https://github.com/VIBondarenko/clavionx" target="_blank">https://github.com/VIBondarenko/clavionx</a> )</li>
+                  <li>Course project (<a href="https://github.com/VIBondarenko/clavionx" target="_blank" rel="noopener">https://github.com/VIBondarenko/clavionx</a> )</li>
                 </ul>
               </p>
             </div>
@@ -333,243 +333,6 @@
       </div>
     </section>
     <!-- End Resume Section -->
-
-		<!-- section start -->
-		<!-- ================ -->
-		<section id="portfolio" class="portfolio">
-			<div class="container">
-				<h1 class="text-center title">Portfolio</h1>
-				<div class="separator"></div>
-				<p class="lead text-center">My some of projects.<br></p>
-				<br>			
-				<div class="row object-non-visible" data-animation-effect="fadeIn">
-					<div class="col-md-12">
-            
-            <!-- isotope filters start -->
-						<div class="filters text-center">
-							<ul class="nav nav-pills">
-								<li class="active"><a href="#" data-filter="*">All</a></li>
-								<li><a href="#" data-filter=".vscarmanager">VSCarManager</a></li>
-								<li><a href="#" data-filter=".scalesmonitorsd">ScalesMonitorSD</a></li>
-							</ul>
-						</div>
-						<!-- isotope filters end -->
-
-						<div class="isotope-container row grid-space-20 filters text-center">
-              <a class="isotope-item vscarmanager btn btn-default btn-block" href="#" data-toggle="modal" data-target="#vscarmanager-project">VSCarManager - Description</a>
-            </div>
-            
-            <!-- Modal -->
-            <div class="modal fade" id="vscarmanager-project" tabindex="-1" role="dialog" aria-labelledby="vscarmanager-project-label" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="vscarmanager-project-label">VSCarManager</h4>
-                  </div>
-                  <div class="modal-body">
-                    <h3>VSCarManager Description</h3>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p>Software for weigh truck in motion and static.</p>
-                        <p>The main features and functions of the software:</p>
-                        <ul>
-                          <li>Weighing truck in motion with a stop on the balances</li>
-                          <li>Weighing truck in motion without a stop on the balances</li>
-                          <li>Weighing truck in static</li>
-                          <li>Recognition truck numbers</li>
-                          <li>Saving number photos</li>
-                          <li>Recording cameras video</li>
-                        </ul>
-                        <h4>Programming Language: Delphi + MS SQL Server + <a href="https://viinex.com" target="_blank">Viinex 3.0</a></h4>
-                      </div>
-                  
-                      <div class="col-md-6">
-                        <img src="img/vscarmanager/img001.jpg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal end -->
-
-            <!-- portfolio items start -->
-						<div class="isotope-container row grid-space-20">
-              <!--VSCarManager-1-->
-              <div class="col-sm-6 col-md-3 isotope-item vscarmanager">
-                <div class="image-box">
-									<div class="overlay-container">
-										<img src="img/vscarmanager/img001.jpg" alt="">
-										<a class="overlay" href="img/vscarmanager/img001.jpg">
-											<i class="fa fa-search-plus"></i>
-											<span>VSCarManager 1</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/vscarmanager/img001.jpg">VSCarManager 1</a>
-								</div>
-							</div>
-
-              <!--VSCarManager-2-->
-							<div class="col-sm-6 col-md-3 isotope-item vscarmanager">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="img/vscarmanager/img002.jpg" alt="">
-										<a class="overlay" href="img/vscarmanager/img002.jpg">
-											<i class="fa fa-search-plus"></i>
-											<span>VSCarManager 2</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/vscarmanager/img002.jpg">VSCarManager 2</a>
-								</div>
-							</div>
-
-              <!--VSCarManager-3-->
-							<div class="col-sm-6 col-md-3 isotope-item vscarmanager">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="img/vscarmanager/img003.jpg" alt="">
-										<a class="overlay" href="img/vscarmanager/img003.jpg">
-											<i class="fa fa-search-plus"></i>
-											<span>VSCarManager 3</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/vscarmanager/img003.jpg">VSCarManager 3</a>
-								</div>
-							</div>
-
-              <!--VSCarManager-4-->
-							<div class="col-sm-6 col-md-3 isotope-item vscarmanager">
-								<div class="image-box">
-									<div class="overlay-container">
-										<img src="img/vscarmanager/img004.jpg" alt="">
-										<a class="overlay" href="img/vscarmanager/img004.jpg">
-											<i class="fa fa-search-plus"></i>
-											<span>VSCarManager 4</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/vscarmanager/img004.jpg">VSCarManager 4</a>
-								</div>
-							</div>  
-            </div>
-
-            <div class="isotope-container row grid-space-20 filters text-center">
-              <h3 class="isotope-item text-center vscarmanager">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VgXELfjxZXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </h3>
-            </div>
-
-            <div class="isotope-container row grid-space-20 filters text-center">
-              <a class="isotope-item scalesmonitorsd btn btn-default btn-block" href="#" data-toggle="modal" data-target="#scalesmonitorsd-project">ScalesMonitorSD - Description</a>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="scalesmonitorsd-project" tabindex="-1" role="dialog" aria-labelledby="scalesmonitorsd-project-label" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="scalesmonitorsd-project-label">ScalesMonitorSD</h4>
-                  </div>
-                  <div class="modal-body">
-                    <h3>ScalesMonitorSD Description</h3>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <p>Software for weigh carriages in motion and static.</p>
-                        <p>The main features and functions of the software:</p>
-                        <ul>
-                          <li>Weighing carriages in motion</li>
-                          <li>Weighing carriages in static</li>
-                          <li>Loading carriages</li>
-                          <li>Dozing carriages</li>
-                          <li>Recognition carriages numbers</li>
-                          <li>Saving numbers photos</li>
-                          <li>Recording cameras video</li>
-                        </ul>
-                        <h4>Programming Language: Delphi + MS SQL Server + <a href="https://viinex.com" target="_blank">Viinex 3.0</a></h4>
-                      </div>
-                      <div class="col-md-6">
-                        <img src="img/scalesmonitorsd/img001.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal end -->
-
-            <div class="isotope-container row grid-space-20">
-                <!--ScalesMonitorSD-1-->
-							<div class="col-sm-6 col-md-3 isotope-item scalesmonitorsd">
-                <div class="image-box">
-									<div class="overlay-container">
-										<img src="img/scalesmonitorsd/img001.png" alt="">
-										<a class="overlay" href="img/scalesmonitorsd/img001.png">
-											<i class="fa fa-search-plus"></i>
-											<span>ScalesMonitorSD 1</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/scalesmonitorsd/img001.png">ScalesMonitorSD 1</a>
-								</div>
-							</div>
-
-              <!--ScalesMonitorSD-2-->
-							<div class="col-sm-6 col-md-3 isotope-item scalesmonitorsd">
-                <div class="image-box">
-									<div class="overlay-container">
-										<img src="img/scalesmonitorsd/img002.png" alt="">
-										<a class="overlay" href="img/scalesmonitorsd/img002.png">
-											<i class="fa fa-search-plus"></i>
-											<span>ScalesMonitorSD 2</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/scalesmonitorsd/img002.png">ScalesMonitorSD 2</a>
-								</div>
-							</div>
-
-              <!--ScalesMonitorSD-3-->
-							<div class="col-sm-6 col-md-3 isotope-item scalesmonitorsd">
-                <div class="image-box">
-									<div class="overlay-container">
-										<img src="img/scalesmonitorsd/img003.png" alt="">
-										<a class="overlay" href="img/scalesmonitorsd/img003.png">
-											<i class="fa fa-search-plus"></i>
-											<span>ScalesMonitorSD 3</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/scalesmonitorsd/img003.png">ScalesMonitorSD 3</a>
-								</div>
-							</div>
-
-              <!--ScalesMonitorSD-4-->
-							<div class="col-sm-6 col-md-3 isotope-item scalesmonitorsd">
-                <div class="image-box">
-									<div class="overlay-container">
-										<img src="img/scalesmonitorsd/img004.png" alt="">
-										<a class="overlay" href="img/scalesmonitorsd/img004.png">
-											<i class="fa fa-search-plus"></i>
-											<span>ScalesMonitorSD 4</span>
-										</a>
-									</div>
-									<a class="btn btn-default btn-block" href="img/scalesmonitorsd/img004.png">ScalesMonitorSD 4</a>
-								</div>
-							</div>
-
-            </div>
-            
-            <div class="isotope-container row grid-space-20 filters text-center"></div>
-
-            <!-- portfolio items end -->
-				</div>
-			</div>
-		</section>
-		<!-- section end -->
   </main>
   <!-- End #main -->
 
@@ -578,8 +341,8 @@
     <div class="container">
       <div class="social-links">
         <h4>Social Links</h4>
-        <a href="https://www.linkedin.com/in/vibondarenko/" class="linkedin" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/VIBondarenko" class="github" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vibondarenko/" class="linkedin" target="_blank" rel="noopener" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/VIBondarenko" class="github" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span id="copyrightyear"></span></strong>. All Rights Reserved.
@@ -596,7 +359,7 @@
   <!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" title="Back to top"><i class="bi bi-arrow-up-short"></i></a>
   
   <!-- Vendor JS Files -->
   <script src="vendor/purecounter/purecounter.js"></script>
