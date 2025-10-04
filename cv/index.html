@@ -10,11 +10,9 @@ lang: en
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>About</h2>
+          <h2>{{ site.data.content[page.lang].cv.about_title }}</h2>
           <h4>
-            <strong>Java Developer</strong> focused on high-performance backend systems, API integration, and data processing. 
-            After more than 10 years of Delphi experience, now specialized in modern Java technologies such 
-            as Spring (Boot, MVC, Security, REST). I actively contribute to agile teams.
+            <strong>{{ site.data.content[page.lang].cv.about_description }}</strong>
           </h4>
         </div>
         <div class="row">
@@ -26,15 +24,15 @@ lang: en
             <div class="row">
               <div class="col-lg-8">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City, Country:</strong> <span>Wels, Austria</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Citizenship:</strong> <span>Ukraine</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>07.06.1981</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Driver’s license:</strong> <span>B</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+4368181292782">+43 681 81 29 27 82</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-Mail:</strong> <span><a href="mailto:vibondarenko@gmail.com">vibondarenko@gmail.com</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/vibondarenko" target="_blank" rel="noopener">linkedin.com/in/vibondarenko</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span><a href="https://github.com/vibondarenko" target="_blank" rel="noopener">github.com/vibondarenko</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fulltime/Remote/Project:</strong> <span>Yes</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.city }}:</strong> <span>Wels, Austria</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.citizenship }}:</strong> <span>Ukraine</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.birthday }}:</strong> <span>07.06.1981</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.license }}:</strong> <span>B</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.phone }}:</strong> <span><a href="tel:+4368181292782">+43 681 81 29 27 82</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.email }}:</strong> <span><a href="mailto:vibondarenko@gmail.com">vibondarenko@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.linkedin }}:</strong> <span><a href="https://www.linkedin.com/in/vibondarenko" target="_blank" rel="noopener">linkedin.com/in/vibondarenko</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.github }}:</strong> <span><a href="https://github.com/vibondarenko" target="_blank" rel="noopener">github.com/vibondarenko</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>{{ site.data.content[page.lang].cv.availability }}:</strong> <span>Yes</span></li>
                 </ul>
               </div>
             </div>
@@ -48,8 +46,8 @@ lang: en
     <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Skills</h2>
-          <h4><strong>Programming languages and Tools</strong></h4>
+          <h2>{{ site.data.content[page.lang].cv.skills_title }}</h2>
+          <h4><strong>{{ site.data.content[page.lang].cv.skills_subtitle }}</strong></h4>
         </div>
 
         <div class="row skills-content">
@@ -106,14 +104,14 @@ lang: en
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <h4> <a href="https://drive.google.com/file/d/1NHQuPt2uFIe8u_N5Z2jYwLzKLwRowMKO/view?usp=drive_link" target="_blank" rel="noopener">Download My Resume (English)</a> </h4>
+          <h2>{{ site.data.content[page.lang].cv.resume_title }}</h2>
+          <h4> <a href="https://drive.google.com/file/d/1NHQuPt2uFIe8u_N5Z2jYwLzKLwRowMKO/view?usp=drive_link" target="_blank" rel="noopener">{{ site.data.content[page.lang].cv.resume_download }}</a> </h4>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             
-            <h4 class="resume-title">Sumary</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.summary_title }}</h4>
             <div class="resume-item pb-0">
               <h4>Vitaliy Bondarenko</h4>
               <p>
@@ -130,7 +128,7 @@ lang: en
               </ul>
             </div>
             
-            <h4 class="resume-title">Languages</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.languages_title }}</h4>
             <div class="resume-item pb-0">
               <ul>
                 <li><b>Ukrainian</b> - Native</li>
@@ -140,7 +138,7 @@ lang: en
               </ul>
             </div>
 
-            <h4 class="resume-title">Education</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.education_title }}</h4>
 
             <div class="resume-item">
               <h4>09.2002 - 01.2004</h4>
@@ -157,7 +155,7 @@ lang: en
                 Pathology Fundamentals,  Human Diagnostic Fundamentals, Computer Diagnostic Systems Design and etc.</p>
             </div>
 
-            <h4 class="resume-title">Courses</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.courses_title }}</h4>
 
             <div class="resume-item">
               <h4>01.05.2022 - 15.05.2022</h4>
@@ -182,7 +180,7 @@ lang: en
               </p>
             </div>
 
-            <h4 class="resume-title">Projects</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.projects_title }}</h4>
             <div class="resume-item pb-0">
               <ul>
                 <li><b>VSCarManager</b> - Software for weigh truck in motion and static</li>
@@ -198,7 +196,7 @@ lang: en
           
           <!--PROFESSIONAL EXPERIENCE-->
           <div class="col-lg-6">
-            <h4 class="resume-title">Professional Experience</h4>
+            <h4 class="resume-title">{{ site.data.content[page.lang].cv.experience_title }}</h4>
 
             <div class="resume-item">
               <h4>05.2024 - 05.2025</h4>

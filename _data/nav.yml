@@ -1,20 +1,25 @@
 - id: home
-  href: "/#home"
+  href_en: "/"
+  href_de: "/de"
   label_en: "Home"
   label_de: "Start"
 - id: about
-  href: "/#about"
+  href_en: "/#about"
+  href_de: "/de#about"
   label_en: "About"
   label_de: "Über mich"
 - id: projects
-  href: "/#projects"
+  href_en: "/#projects"
+  href_de: "/de#projects"
   label_en: "Projects"
   label_de: "Projekte"
 - id: contact
-  href: "/#contact"
+  href_en: "/#contact"
+  href_de: "/de#contact"
   label_en: "Contact"
   label_de: "Kontakt"
 - id: cv
-  href: "/cv/"
+  href_en: "/cv/"
+  href_de: "/cv/de/"
   label_en: "CV (Resume)"
   label_de: "Lebenslauf"

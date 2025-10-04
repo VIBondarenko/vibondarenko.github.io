@@ -1,0 +1,129 @@
+en:
+  # Landing page content
+  hero:
+    title: "Hi, I'm <span class=\"text-gradient\">Vitaliy Bondarenko (VBO)</span>"
+    subtitle: "Backend Developer & Tech Enthusiast"
+    description: "I create robust, scalable backend solutions and love exploring modern technologies. Passionate about building systems that make a difference."
+    btn_projects: "View My Work"
+    btn_contact: "Get In Touch"
+  
+  about:
+    title: "About Me"
+    subtitle: "Passionate developer with expertise in modern technologies"
+    backend:
+      title: "Backend Development"
+      description: "Expertise in Java, Java Spring, Python, Delphi, C/C++ and database design. Building scalable APIs and microservices."
+    devops:
+      title: "DevOps"
+      description: "Experience with Docker, and CI/CD pipelines. Optimizing deployment and infrastructure."
+    tech:
+      title: "Modern Tech Stack"
+      description: "Always learning and adapting to new technologies. Currently exploring AI and machine learning."
+  
+  projects:
+    title: "Featured Projects"
+    subtitle: "Some of my recent work and pet projects"
+    view_project: "View Project"
+    
+  contact:
+    title: "Let's Work Together"
+    subtitle: "Have a project in mind? Let's discuss how we can bring it to life."
+    email: "Email"
+    phone: "Phone"
+    business_email: "Business Email"
+    send_message: "Send Message"
+    call_now: "Call Now"
+    business_inquiries: "Business Inquiries"
+  
+  # CV page content
+  cv:
+    title: "Software Developer (Java and Delphi)"
+    description: "Vitaliy Bondarenko | Software Developer (Java and Delphi)"
+    about_title: "About"
+    about_description: "Java Developer focused on high-performance backend systems, API integration, and data processing. After more than 10 years of Delphi experience, now specialized in modern Java technologies such as Spring (Boot, MVC, Security, REST). I actively contribute to agile teams."
+    skills_title: "Skills"
+    skills_subtitle: "Programming languages and Tools"
+    resume_title: "Resume"
+    resume_download: "Download My Resume (English)"
+    summary_title: "Summary"
+    languages_title: "Languages"
+    education_title: "Education"
+    courses_title: "Courses"
+    projects_title: "Projects"
+    experience_title: "Professional Experience"
+    
+    # Personal info labels
+    city: "City, Country"
+    citizenship: "Citizenship"
+    birthday: "Birthday"
+    license: "Driver's license"
+    phone: "Phone"
+    email: "E-Mail"
+    linkedin: "LinkedIn"
+    github: "Github"
+    availability: "Fulltime/Remote/Project"
+
+de:
+  # Landing page content
+  hero:
+    title: "Hallo, ich bin <span class=\"text-gradient\">Vitaliy Bondarenko (VBO)</span>"
+    subtitle: "Backend-Entwickler & Tech-Enthusiast"
+    description: "Ich entwickle robuste, skalierbare Backend-Lösungen und liebe es, moderne Technologien zu erkunden. Leidenschaftlich daran interessiert, Systeme zu entwickeln, die einen Unterschied machen."
+    btn_projects: "Meine Arbeit ansehen"
+    btn_contact: "Kontakt aufnehmen"
+  
+  about:
+    title: "Über mich"
+    subtitle: "Leidenschaftlicher Entwickler mit Expertise in modernen Technologien"
+    backend:
+      title: "Backend-Entwicklung"
+      description: "Expertise in Java, Java Spring, Python, Delphi, C/C++ und Datenbankdesign. Entwicklung skalierbarer APIs und Microservices."
+    devops:
+      title: "DevOps"
+      description: "Erfahrung mit Docker und CI/CD-Pipelines. Optimierung von Deployment und Infrastruktur."
+    tech:
+      title: "Moderner Tech-Stack"
+      description: "Immer lernend und anpassend an neue Technologien. Derzeit erkunde ich KI und maschinelles Lernen."
+  
+  projects:
+    title: "Ausgewählte Projekte"
+    subtitle: "Einige meiner neuesten Arbeiten und persönlichen Projekte"
+    view_project: "Projekt ansehen"
+    
+  contact:
+    title: "Lassen Sie uns zusammenarbeiten"
+    subtitle: "Haben Sie ein Projekt im Kopf? Lassen Sie uns besprechen, wie wir es zum Leben erwecken können."
+    email: "E-Mail"
+    phone: "Telefon"
+    business_email: "Geschäfts-E-Mail"
+    send_message: "Nachricht senden"
+    call_now: "Jetzt anrufen"
+    business_inquiries: "Geschäftsanfragen"
+  
+  # CV page content
+  cv:
+    title: "Softwareentwickler (Java und Delphi)"
+    description: "Vitaliy Bondarenko | Softwareentwickler (Java und Delphi)"
+    about_title: "Über mich"
+    about_description: "Java-Entwickler mit Fokus auf hochperformante Backend-Systeme, API-Integration und Datenverarbeitung. Nach mehr als 10 Jahren Delphi-Erfahrung, jetzt spezialisiert auf moderne Java-Technologien wie Spring (Boot, MVC, Security, REST). Ich trage aktiv zu agilen Teams bei."
+    skills_title: "Fähigkeiten"
+    skills_subtitle: "Programmiersprachen und Werkzeuge"
+    resume_title: "Lebenslauf"
+    resume_download: "Meinen Lebenslauf herunterladen (Deutsch)"
+    summary_title: "Zusammenfassung"
+    languages_title: "Sprachen"
+    education_title: "Bildung"
+    courses_title: "Kurse"
+    projects_title: "Projekte"
+    experience_title: "Berufserfahrung"
+    
+    # Personal info labels
+    city: "Stadt, Land"
+    citizenship: "Staatsangehörigkeit"
+    birthday: "Geburtstag"
+    license: "Führerschein"
+    phone: "Telefon"
+    email: "E-Mail"
+    linkedin: "LinkedIn"
+    github: "Github"
+    availability: "Vollzeit/Remote/Projekt"
