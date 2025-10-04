@@ -1,0 +1,12 @@
+title: "Vitaliy Bondarenko"
+description: "Developer portfolio and resume"
+baseurl: "" # GitHub Pages project site root (empty for user/organization site)
+url: "https://vibondarenko.github.io"
+markdown: kramdown
+timezone: Europe/Vienna
+collections: {}
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

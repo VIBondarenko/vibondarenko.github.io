@@ -326,7 +326,7 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -463,7 +463,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;

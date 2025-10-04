@@ -1,0 +1,20 @@
+- id: home
+  href: "/#home"
+  label_en: "Home"
+  label_de: "Start"
+- id: about
+  href: "/#about"
+  label_en: "About"
+  label_de: "Über mich"
+- id: projects
+  href: "/#projects"
+  label_en: "Projects"
+  label_de: "Projekte"
+- id: contact
+  href: "/#contact"
+  label_en: "Contact"
+  label_de: "Kontakt"
+- id: cv
+  href: "/cv/"
+  label_en: "CV (Resume)"
+  label_de: "Lebenslauf"

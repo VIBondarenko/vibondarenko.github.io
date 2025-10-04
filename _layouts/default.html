@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% assign rawlang = page.lang | default: 'en' %}
+{% if rawlang != 'en' and rawlang != 'de' %}{% assign rawlang = 'en' %}{% endif %}
+<html lang="{{ rawlang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <!-- Unified Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Site styles -->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/anim1.css">
+  {% if page.extra_css %}
+    {% for css in page.extra_css %}
+      <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
+  {% endif %}
+  {% if page.cv %}
+    <!-- CV specific (retaining needed original styles, but без Google Fonts) -->
+    <link href="/cv/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/cv/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/cv/vendor/boxicons/css/boxicons.css" rel="stylesheet">
+    <link href="/cv/vendor/glightbox/css/glightbox.css" rel="stylesheet">
+    <link href="/cv/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/cv/css/animations.css" rel="stylesheet">
+    <link href="/cv/css/style.css" rel="stylesheet">
+    <link href="/cv/css/custom.css" rel="stylesheet">
+    <style>
+      body, .resume, .section-title, .section-subtitle, .resume-title, .resume-item, .resume-item h4, .resume-item p, .resume-item ul, .resume-item li {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      }
+      .resume-title, .section-title {
+        color: var(--dark);
+        font-weight: 700;
+      }
+      .resume-item h4 {
+        color: var(--primary);
+        font-weight: 600;
+      }
+      .resume-item ul, .resume-item li {
+        color: var(--gray-700);
+        font-size: 1rem;
+      }
+      .resume-item p {
+        color: var(--gray-600);
+      }
+      .resume {
+        background: #f1f5f9;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+      .resume-item {
+        margin-bottom: 2rem;
+      }
+      .resume-title {
+        margin-bottom: 1rem;
+      }
+      .section-title {
+        margin-bottom: 1rem;
+      }
+      .section-subtitle {
+        margin-bottom: 2rem;
+      }
+    </style>
+  {% endif %}
+  {% if page.head_extra %}{{ page.head_extra }}{% endif %}
+</head>
+<body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% if page.include_modals %}
+    {% include modals.html %}
+  {% endif %}
+  {% include footer.html %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/anim1.js"></script>
+  {% if page.cv %}
+    <!-- CV specific scripts -->
+    <script src="/cv/vendor/purecounter/purecounter.js"></script>
+    <script src="/cv/vendor/aos/aos.js"></script>
+    <script src="/cv/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/cv/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/cv/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/cv/vendor/typed.js/typed.min.js"></script>
+    <script src="/cv/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/cv/vendor/php-email-form/validate.js"></script>
+    <!-- Original extra plugins if still required -->
+    <script src="/cv/plugins/jquery.min.js"></script>
+    <script src="/cv/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/cv/plugins/modernizr.js"></script>
+    <script src="/cv/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="/cv/plugins/jquery.backstretch.min.js"></script>
+    <script src="/cv/plugins/jquery.appear.js"></script>
+    <script src="/cv/js/main.js"></script>
+    <script src="/cv/js/template.js"></script>
+    <script src="/cv/js/custom.js"></script>
+  {% endif %}
+  {% if page.extra_js %}
+    {% for js in page.extra_js %}
+      <script src="{{ js }}"></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

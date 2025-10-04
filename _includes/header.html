@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">
+      <img src="/images/logo.png" alt="{{ site.title }} Logo" class="brand-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">{%- assign lang = page.lang | default: 'en' -%}{%- for item in site.data.nav -%}{%- assign label_key = 'label_' | append: lang -%}<li class="nav-item"><a class="nav-link{% if page.nav_active == item.id %} active{% endif %}" href="{{ item.href }}">{{ item[label_key] }}</a></li>{%- endfor -%}</ul>
+    </div>
+  </div>
+</nav>

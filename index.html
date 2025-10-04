@@ -1,68 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitaliy Bondarenko - Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/anim1.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <img src="images/logo.png" alt="Vitaliy Bondarenko Logo" class="brand-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+---
+title: "Developer"
+nav_active: home
+include_modals: true
+lang: en
+---
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="hero-title">
-                            Hi, I'm <span class="text-gradient">Vitaliy Bondarenko (VBO)</span>
-                        </h1>
-                        <h2 class="hero-subtitle">Backend Developer & Tech Enthusiast</h2>
-                        <p class="hero-description">
-                            I create robust, scalable backend solutions and love exploring modern technologies. 
-                            Passionate about building systems that make a difference.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
-                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
-                        </div>
-                        <div class="hero-social">
-                            <a href="https://linkedin.com/in/vibondarenko/" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/vibondarenko/" class="social-link" title="GitHub Profile" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                        </div>
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm <span class="text-gradient">Vitaliy Bondarenko (VBO)</span></h1>
+                    <h2 class="hero-subtitle">Backend Developer & Tech Enthusiast</h2>
+                    <p class="hero-description">I create robust, scalable backend solutions and love exploring modern technologies. 
+                        Passionate about building systems that make a difference.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com/in/vibondarenko/" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vibondarenko/" class="social-link" title="GitHub Profile" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <!-- <div class="hero-image">
-                        <div class="floating-card">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                    </div> -->
-
-                    <div class="hero-image">
-                        <div class="floating-card">
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="floating-card">
                         <div class="code-editor">
                             <div class="title-bar">
                                 <span class="file-name">VBOCardController.java</span>
@@ -74,57 +39,56 @@
                             </div>
                             <pre class="code-container"></pre>
                         </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
 
+<!-- About Section -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer with expertise in modern technologies</p>
+            </div>
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend Development</h4>
+                    <p>Expertise in Java, Java Spring, Python, Delphi, C/C++ and database design. Building scalable APIs and microservices.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>DevOps</h4>
+                    <p>Experience with Docker, and CI/CD pipelines. Optimizing deployment and infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Modern Tech Stack</h4>
+                    <p>Always learning and adapting to new technologies. Currently exploring AI and machine learning.</p>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Passionate developer with expertise in modern technologies</p>
-                </div>
-            </div>
-            <div class="row g-4 mt-4">
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h4>Backend Development</h4>
-                        <p>Expertise in Java, Java Spring, Python, Delphi, C/C++ and database design. Building scalable APIs and microservices.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>DevOps</h4>
-                        <p>Experience with Docker, and CI/CD pipelines. Optimizing deployment and infrastructure.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Modern Tech Stack</h4>
-                        <p>Always learning and adapting to new technologies. Currently exploring AI and machine learning.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section py-5">
@@ -298,62 +262,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 Vitaliy Bondarenko. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/vibondarenko/" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/vibondarenko" class="social-link" title="GitHub Profile" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Universal Project Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectModalLabel">Project Details</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="projectModalBody">
-                    <div class="text-center py-4">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                        <p class="mt-2">Loading project details...</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Screenshot Modal -->
-    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="screenshotModalLabel">Screenshot</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center p-0">
-                    <img id="screenshotImage" src="" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/anim1.js"></script>
-</body>
+<!-- Footer, modals, scripts now provided by layout -->
