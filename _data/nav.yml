@@ -20,6 +20,6 @@
   label_de: "Kontakt"
 - id: cv
   href_en: "/cv/"
-  href_de: "/cv/de/"
+  href_de: "/cv/de"
   label_en: "CV (Resume)"
   label_de: "Lebenslauf"
