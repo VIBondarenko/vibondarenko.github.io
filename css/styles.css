@@ -29,104 +29,11 @@ body {
     line-height: 1.6;
     color: var(--gray-700);
     background: var(--light);
-    overflow-x: hidden;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Text gradient */
-.text-gradient {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* Navbar Styles */
-.navbar {
-    padding: 1rem 0;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.95) !important;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 0.95) !important;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--dark) !important;
-}
-
-.brand-logo {
-    height: 48px;
-    width: auto;
-    margin-right: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.brand-logo:hover {
-    transform: scale(1.05);
-}
-
-.navbar-nav .nav-link {
-    color: var(--gray-600) !important;
-    font-weight: 500;
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem !important;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--primary) !important;
-.navbar-nav .nav-link:hover {
-    color: var(--primary-dark) !important;
-    background: rgba(59, 130, 246, 0.1);
-}
-}
-
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(135deg, 
-        rgba(59, 130, 246, 0.12) 0%, 
-        rgba(37, 99, 235, 0.12) 100%);
-    position: relative;
-    overflow: hidden;
-    padding-top: 100px;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="0" cy="0" r="1"><stop offset="0%" stop-color="%233b82f6"/><stop offset="100%" stop-color="%233b82f6" stop-opacity="0"/></radialGradient></defs><g opacity="0.8"><circle fill="url(%23a)" cx="500" cy="500" r="400"/></g></svg>') no-repeat center center;
-    background-size: 80% 80%;
-    opacity: 0.1;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-}
-
-.hero-content {
-    z-index: 2;
-    position: relative;
-}
-
+    /* Deprecated: styles.css
+       All styles consolidated into /css/site.css
+       This file retained as a lightweight placeholder to avoid 404s
+    */
+    @import url('/css/site.css');
 .hero-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
@@ -650,42 +557,7 @@ section {
     color: var(--gray-600);
 }
 
-/* Project detail floating layout */
-.project-float-container {
-    position: relative;
-}
-
-.project-image-float {
-    float: left;
-    width: 300px;
-    margin: 0 2rem 1rem 0;
-    border-radius: 0.75rem;
-    background: linear-gradient(135deg, var(--primary), var(--accent)) !important;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-content-flow {
-    text-align: justify;
-    line-height: 1.7;
-}
-
-.project-content-flow::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive floating */
-@media (max-width: 768px) {
-    .project-image-float {
-        float: none;
-        width: 100%;
-        margin: 0 0 1rem 0;
-    }
-}
+/* Removed legacy project-image-float block (no longer used) */
 
 .modal-footer {
     border-top: 1px solid var(--gray-200);
