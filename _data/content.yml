@@ -25,6 +25,91 @@ en:
     subtitle: "Some of my recent work and pet projects"
     view_project: "View Project"
     
+    # Project details
+    vscarmanager:
+      title: "VSCarManager"
+      description: "Truck Weighing System. Comprehensive software solution for weighing trucks both in motion and static positions. This system provides real-time monitoring and data collection for transportation and logistics companies."
+      description_2: "Built using Delphi with robust database integration using MS SQL Server. The system interfaces with industrial weighing sensors and integrates with Viinex video surveillance platform for complete truck monitoring solution."
+      description_3: "The system is designed to handle high-volume traffic with real-time processing capabilities. It includes fault-tolerance mechanisms and automatic backup systems to ensure continuous operation in industrial environments."
+      technologies_title: "Technologies Used"
+      features_title: "Key Features"
+      architecture_title: "Architecture & Performance"
+      screenshots_title: "Screenshots"
+      features:
+        - "Dynamic truck weighing while in motion"
+        - "Static weighing capabilities"
+        - "Real-time data processing and storage"
+        - "Integration with video surveillance systems"
+        - "Comprehensive reporting and analytics"
+        - "Multi-user access control"
+      
+    viilinesync:
+      title: "ViiLineSync"
+      description: "This application integrates a dynamic wagon weighing system with a wagon number recognition module and the ERP system."
+      description_2: "The program communicates with the weight controller, collects weighing data, retrieves the corresponding wagon numbers, merges the information, and ensures secure local storage."
+      description_3: "All processed data is automatically transferred to the ERP system, enabling complete and reliable tracking of wagon loadings. Features advanced conflict resolution and automatic recovery mechanisms that ensure data integrity even in cases of network interruptions or system failures."
+      technologies_title: "Technologies Used"
+      features_title: "Key Features"
+      architecture_title: "System Architecture"
+      screenshots_title: "Screenshots"
+      features:
+        - "Integration of dynamic weighing data and wagon number recognition"
+        - "Direct communication with the weight controller"
+        - "Automatic merging and validation of weighing results with wagon IDs"
+        - "Local storage for reliability and backup"
+        - "Automatic data transfer to the ERP system for further processing and reporting"
+        
+    scalesmonitorsd:
+      title: "ScalesMonitorSD"
+      description: "Railway Weighing System. Specialized software for railway carriage weighing systems. Monitors and records weight data for train carriages both during movement and when stationary."
+      description_2: "Designed specifically for railway industry requirements with high precision weighing and robust data management capabilities. Integrates seamlessly with existing railway infrastructure."
+      description_3: "The system provides precise weight measurements even for moving carriages, with advanced algorithms that compensate for motion dynamics and environmental factors. Built for 24/7 industrial operation with maximum reliability."
+      technologies_title: "Technologies Used"
+      features_title: "Key Features" 
+      precision_title: "Precision & Reliability"
+      screenshots_title: "Screenshots"
+      features:
+        - "Railway carriage weight monitoring"
+        - "Motion and static weighing capabilities"
+        - "Automated data collection and logging"
+        - "Integration with railway management systems"
+        - "Real-time alerts and notifications"
+        - "Historical data analysis"
+        
+    clavionx:
+      title: "ClavionX"
+      description: "Modern Learning Management System (LMS) designed for educational institutions and corporate training. Features comprehensive course management, student tracking, and assessment tools."
+      description_2: "The platform incorporates modern educational methodologies and interactive learning experiences, designed to enhance student engagement and improve learning outcomes."
+      description_3: "Built with scalability in mind, the system can handle thousands of concurrent users and provides a seamless experience for both educators and learners. The intuitive interface makes content creation and course management effortless."
+      technologies_title: "Technologies Used"
+      features_title: "Key Features"
+      impact_title: "Educational Impact"
+      screenshots_title: "Screenshots"
+      features:
+        - "Course creation and management"
+        - "Student progress tracking"
+        - "Interactive assessments and quizzes"
+        - "Multi-media content support"
+        - "Real-time collaboration tools"
+        - "Analytics and reporting dashboard"
+        
+    aimeetingoptimizer:
+      title: "AI Meeting Optimizer"
+      description: "AI-powered meeting optimization tool that automatically transcribes audio recordings, analyzes content, and generates intelligent summaries and action items."
+      description_2: "Leverages advanced AI models for natural language processing and audio transcription. The system will be capable of understanding context, identifying important decisions, and automatically generating actionable insights from meeting recordings."
+      description_3: "Designed to significantly reduce the time spent on meeting follow-ups and ensure that important decisions and action items are never missed or forgotten. The platform incorporates cutting-edge technology to streamline business communication processes."
+      technologies_title: "Technologies Used"
+      features_title: "Key Features"
+      impact_title: "Business Impact"
+      screenshots_title: "Screenshots"
+      features:
+        - "Audio-to-text transcription using AI"
+        - "Automatic meeting summary generation"
+        - "Action item extraction and assignment"
+        - "Speaker identification and time tracking"
+        - "Key topic and decision point highlighting"
+        - "Integration with calendar and task management"
+    
   contact:
     title: "Let's Work Together"
     subtitle: "Have a project in mind? Let's discuss how we can bring it to life."
@@ -89,6 +174,91 @@ de:
     title: "Ausgewählte Projekte"
     subtitle: "Einige meiner neuesten Arbeiten und persönlichen Projekte"
     view_project: "Projekt ansehen"
+    
+    # Project details
+    vscarmanager:
+      title: "VSCarManager"
+      description: "LKW-Wiegesystem. Umfassende Softwarelösung zum Wiegen von LKWs sowohl in Bewegung als auch in statischen Positionen. Dieses System bietet Echtzeitüberwachung und Datenerfassung für Transport- und Logistikunternehmen."
+      description_2: "Entwickelt mit Delphi mit robuster Datenbankintegration über MS SQL Server. Das System ist mit industriellen Wiegesensoren verbunden und integriert sich in die Viinex-Videoüberwachungsplattform für eine komplette LKW-Überwachungslösung."
+      description_3: "Das System ist darauf ausgelegt, hohen Verkehr mit Echtzeit-Verarbeitungsfähigkeiten zu bewältigen. Es umfasst Fehlertoleranz-Mechanismen und automatische Backup-Systeme, um einen kontinuierlichen Betrieb in industriellen Umgebungen zu gewährleisten."
+      technologies_title: "Verwendete Technologien"
+      features_title: "Hauptfunktionen"
+      architecture_title: "Architektur & Leistung"
+      screenshots_title: "Screenshots"
+      features:
+        - "Dynamisches LKW-Wiegen während der Fahrt"
+        - "Statische Wiegefähigkeiten"
+        - "Echtzeit-Datenverarbeitung und -speicherung"
+        - "Integration mit Videoüberwachungssystemen"
+        - "Umfassende Berichte und Analysen"
+        - "Mehrbenutzerzugriffskontrolle"
+      
+    viilinesync:
+      title: "ViiLineSync"
+      description: "Diese Anwendung integriert ein dynamisches Waggon-Wiegesystem mit einem Waggonnummer-Erkennungsmodul und dem ERP-System."
+      description_2: "Das Programm kommuniziert mit dem Gewichtscontroller, sammelt Wiegedaten, ruft die entsprechenden Waggonnummern ab, führt die Informationen zusammen und gewährleistet eine sichere lokale Speicherung."
+      description_3: "Alle verarbeiteten Daten werden automatisch an das ERP-System übertragen und ermöglichen eine vollständige und zuverlässige Verfolgung der Waggon-Beladungen. Bietet fortschrittliche Konfliktlösungs- und automatische Wiederherstellungsmechanismen, die die Datenintegrität auch bei Netzwerkunterbrechungen oder Systemfehlern gewährleisten."
+      technologies_title: "Verwendete Technologien"
+      features_title: "Hauptfunktionen"
+      architecture_title: "Systemarchitektur"
+      screenshots_title: "Screenshots"
+      features:
+        - "Integration von dynamischen Wiegedaten und Waggonnummer-Erkennung"
+        - "Direkte Kommunikation mit dem Gewichtscontroller"
+        - "Automatische Zusammenführung und Validierung von Wiegeergebnissen mit Waggon-IDs"
+        - "Lokale Speicherung für Zuverlässigkeit und Backup"
+        - "Automatische Datenübertragung an das ERP-System für weitere Verarbeitung und Berichterstattung"
+        
+    scalesmonitorsd:
+      title: "ScalesMonitorSD"
+      description: "Eisenbahn-Wiegesystem. Spezialisierte Software für Eisenbahnwaggon-Wiegesysteme. Überwacht und erfasst Gewichtsdaten für Zugwaggons sowohl während der Bewegung als auch im Stillstand."
+      description_2: "Speziell für die Anforderungen der Eisenbahnindustrie entwickelt mit hochpräzisem Wiegen und robusten Datenmanagement-Fähigkeiten. Integriert sich nahtlos in bestehende Eisenbahninfrastruktur."
+      description_3: "Das System bietet präzise Gewichtsmessungen auch für bewegende Waggons, mit fortschrittlichen Algorithmen, die Bewegungsdynamik und Umweltfaktoren kompensieren. Gebaut für 24/7-Industriebetrieb mit maximaler Zuverlässigkeit."
+      technologies_title: "Verwendete Technologien"
+      features_title: "Hauptfunktionen"
+      precision_title: "Präzision & Zuverlässigkeit"
+      screenshots_title: "Screenshots"
+      features:
+        - "Eisenbahnwaggon-Gewichtsüberwachung"
+        - "Bewegungs- und statische Wiegefähigkeiten"
+        - "Automatisierte Datenerfassung und -protokollierung"
+        - "Integration mit Eisenbahnmanagementsystemen"
+        - "Echtzeit-Alarme und Benachrichtigungen"
+        - "Historische Datenanalyse"
+        
+    clavionx:
+      title: "ClavionX"
+      description: "Modernes Lernmanagementsystem (LMS) für Bildungseinrichtungen und Unternehmensschulungen. Bietet umfassendes Kursmanagement, Studenten-Tracking und Bewertungstools."
+      description_2: "Die Plattform integriert moderne Bildungsmethoden und interaktive Lernerfahrungen, um das Engagement der Studenten zu verbessern und Lernergebnisse zu optimieren."
+      description_3: "Mit Skalierbarkeit im Hinterkopf entwickelt, kann das System Tausende von gleichzeitigen Benutzern handhaben und bietet eine nahtlose Erfahrung für Pädagogen und Lernende. Die intuitive Benutzeroberfläche macht die Inhaltserstellung und das Kursmanagement mühelos."
+      technologies_title: "Verwendete Technologien"
+      features_title: "Hauptfunktionen"
+      impact_title: "Bildungseinfluss"
+      screenshots_title: "Screenshots"
+      features:
+        - "Kurserstellung und -verwaltung"
+        - "Verfolgung des Studentenfortschritts"
+        - "Interaktive Bewertungen und Quizzes"
+        - "Multi-Media-Inhaltsunterstützung"
+        - "Echtzeit-Kollaborationstools"
+        - "Analyse- und Berichts-Dashboard"
+        
+    aimeetingoptimizer:
+      title: "AI Meeting Optimizer"
+      description: "KI-gestütztes Meeting-Optimierungstool, das automatisch Audioaufzeichnungen transkribiert, Inhalte analysiert und intelligente Zusammenfassungen und Aktionspunkte generiert."
+      description_2: "Nutzt fortschrittliche KI-Modelle für natürliche Sprachverarbeitung und Audiotranskription. Das System wird in der Lage sein, Kontext zu verstehen, wichtige Entscheidungen zu identifizieren und automatisch umsetzbare Erkenntnisse aus Meeting-Aufzeichnungen zu generieren."
+      description_3: "Darauf ausgelegt, die Zeit für Meeting-Nachbearbeitungen erheblich zu reduzieren und sicherzustellen, dass wichtige Entscheidungen und Aktionspunkte nie übersehen oder vergessen werden. Die Plattform integriert modernste Technologie zur Optimierung von Geschäftskommunikationsprozessen."
+      technologies_title: "Verwendete Technologien"
+      features_title: "Hauptfunktionen"
+      impact_title: "Geschäftseinfluss"
+      screenshots_title: "Screenshots"
+      features:
+        - "Audio-zu-Text-Transkription mit KI"
+        - "Automatische Meeting-Zusammenfassungsgenerierung"
+        - "Aktionspunkt-Extraktion und -Zuweisung"
+        - "Sprechererkennung und Zeitverfolgung"
+        - "Hervorhebung von Hauptthemen und Entscheidungspunkten"
+        - "Integration mit Kalender- und Aufgabenmanagement"
     
   contact:
     title: "Lassen Sie uns zusammenarbeiten"

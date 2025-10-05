@@ -10,7 +10,7 @@ class ProjectManager {
     }
 
     // Function to load project details
-    async loadProject(projectName, projectFile) {
+    async loadProject(projectName, projectFile, language = 'en') {
         const modalTitle = document.getElementById('projectModalLabel');
         const modalBody = document.getElementById('projectModalBody');
         
@@ -32,11 +32,24 @@ class ProjectManager {
         modal.show();
         
         try {
-            // Fetch project content
-            const response = await fetch(projectFile);
+            // Fetch project content with language parameter
+            let projectUrl = projectFile;
+            if (language === 'de') {
+                // For German, try to load localized version
+                projectUrl = projectFile.replace('.html', '-de.html');
+            }
+            
+            let response = await fetch(projectUrl);
+            
+            // If localized version doesn't exist, fall back to default
+            if (!response.ok && language === 'de') {
+                response = await fetch(projectFile);
+            }
+            
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
+            
             const content = await response.text();
             
             // Update modal body with content
@@ -88,9 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Global function for onclick handlers
-function loadProject(projectName, projectFile) {
+function loadProject(projectName, projectFile, language = 'en') {
     if (window.projectManager) {
-        window.projectManager.loadProject(projectName, projectFile);
+        window.projectManager.loadProject(projectName, projectFile, language);
     }
 }
 
