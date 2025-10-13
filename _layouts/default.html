@@ -38,34 +38,91 @@
     <!-- Ensure Bootstrap navbar functionality on CV pages -->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Force navbar to expand on desktop
-        const navbar = document.querySelector('.navbar');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        const dropdown = document.querySelector('.nav-item.dropdown');
-        const dropdownButton = document.querySelector('#languageDropdown');
+        const elements = {
+            navbar: document.querySelector('.navbar'),
+            navbarCollapse: document.querySelector('.navbar-collapse'),
+            dropdown: document.querySelector('.nav-item.dropdown'),
+            dropdownButton: document.querySelector('#languageDropdown'),
+            navbarToggler: document.querySelector('.navbar-toggler')
+        };
         
-        if (navbar && window.innerWidth >= 992) {
-            navbar.classList.remove('navbar-dark');
-            navbar.classList.add('navbar-light');
+        function setupDesktopNavbar() {
+            if (elements.navbar) {
+                elements.navbar.classList.remove('navbar-dark');
+                elements.navbar.classList.add('navbar-light');
+            }
+            
+            if (elements.navbarCollapse) {
+                elements.navbarCollapse.classList.add('show');
+                elements.navbarCollapse.style.display = 'flex';
+            }
+            
+            if (elements.dropdown) {
+                elements.dropdown.style.display = 'block';
+                elements.dropdown.style.visibility = 'visible';
+            }
+            
+            if (elements.dropdownButton) {
+                elements.dropdownButton.style.display = 'inline-flex';
+                elements.dropdownButton.style.alignItems = 'center';
+                elements.dropdownButton.style.visibility = 'visible';
+            }
         }
         
-        if (navbarCollapse) {
-            navbarCollapse.classList.add('show');
-            navbarCollapse.style.display = 'flex';
+        function setupMobileNavbar() {
+            if (elements.navbarCollapse) {
+                elements.navbarCollapse.style.display = '';
+                const isExpanded = elements.navbarToggler && elements.navbarToggler.getAttribute('aria-expanded') === 'true';
+                if (!isExpanded) {
+                    elements.navbarCollapse.classList.remove('show');
+                }
+            }
+            
+            if (elements.dropdown) {
+                elements.dropdown.style.display = '';
+                elements.dropdown.style.visibility = '';
+            }
+            
+            if (elements.dropdownButton) {
+                elements.dropdownButton.style.display = '';
+                elements.dropdownButton.style.alignItems = '';
+                elements.dropdownButton.style.visibility = '';
+            }
         }
         
-        if (dropdown) {
-            dropdown.style.display = 'block';
-            dropdown.style.visibility = 'visible';
+        function handleNavbarDisplay() {
+            if (window.innerWidth >= 992) {
+                setupDesktopNavbar();
+            } else {
+                setupMobileNavbar();
+            }
         }
         
-        if (dropdownButton) {
-            dropdownButton.style.display = 'inline-flex';
-            dropdownButton.style.alignItems = 'center';
-            dropdownButton.style.visibility = 'visible';
+        function setupMobileMenuClosing() {
+            if (window.innerWidth < 992 && elements.navbarCollapse) {
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        const bsCollapse = bootstrap.Collapse.getInstance(elements.navbarCollapse) || 
+                                         new bootstrap.Collapse(elements.navbarCollapse, {toggle: false});
+                        bsCollapse.hide();
+                    });
+                });
+            }
         }
         
-        console.log('CV navbar functionality restored');
+        // Initialize
+        handleNavbarDisplay();
+        setupMobileMenuClosing();
+        
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(handleNavbarDisplay, 150);
+        });
+        
+        console.log('CV navbar functionality with mobile support restored');
     });
     </script>
     {% endif %}
